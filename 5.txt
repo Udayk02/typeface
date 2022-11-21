@@ -1,0 +1,35 @@
+To my knowledge, web crawling means gathering information from a website.
+1. We extract all the HTML data by the HTML tags and store that data.
+2. If there are any URLs in the website, we add them into the urls queue and loop the same.
+
+-> Web crawling basically uses Graph Searching algorithms such as Depth First Search and creates a parse tree
+using the HTML tags as the nodes.
+
+For web crawling, I would like to use python as my main language.
+It has lot of libraries for web scraping and also for analysing the data that is scraped from the website.
+Web crawling is used to extract data from a website so that we can analyse it's data.
+
+Components that I would like to use are:
+Web Crawler tools:
+    Python libraries:
+    1. Beautiful Soup - to create parse trees of HTML and XML.
+    2. requests - to read the content of website using an url.
+Browser: 
+    Any browser supportive of inspection of a website
+Website URL:
+    Any website's URL
+    ** Website has to allow web crawling on it's URL.
+
+1. First, we read the content from the website into an object using requests.
+2. Thereafter, we use Beautiful Soup to read it's content object.
+3. Using BeautifulSoup, we can find the data in the required tags.
+4. If we have other URLs, we again append them into a URL queue and extract data from them again.
+
+Steps to extract data:
+1. For images, we have to find out the img tag or for a specific image, we have to find the class name.
+2. Using that tag or the class name, we have to extract img data from the website content.
+3. We can write that img file into a .jpg or a .png file or a image of extension of your choice.
+4. For text, we have to decide upon the specific text we need from a website.
+5. For example, if we want to extract text from About page, we have to find out that class name.
+6. Using that class name, we can extract that specific text and we can write into a text file.
+7. If the data is analytical, we store it in a Pandas dataframe or a excel sheet or a csv file.
